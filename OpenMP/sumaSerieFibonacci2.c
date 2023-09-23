@@ -1,4 +1,4 @@
-// Método 2
+// Solución secuencial: método 2
 
 #include <stdio.h>
 #define MAX 1000

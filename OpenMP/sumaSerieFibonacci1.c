@@ -1,4 +1,4 @@
-// Método 1
+// Solución secuencial: método 1
 
 // Incluye la biblioteca estándar de entrada y salida
 #include <stdio.h>

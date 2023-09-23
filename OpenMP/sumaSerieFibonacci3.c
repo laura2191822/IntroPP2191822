@@ -1,4 +1,4 @@
-// Método 3
+// Solución secuencial: método 3
 
 #include <stdio.h>
 
