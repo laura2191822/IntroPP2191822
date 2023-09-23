@@ -1,3 +1,5 @@
+// Método 3
+
 #include <stdio.h>
 
 // Función para calcular el n-ésimo número de Fibonacci
