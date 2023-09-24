@@ -24,9 +24,9 @@ Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguient
   ```
   vim omp_sumaSerieFibonacci.c
   ```
-4. Al abrir el editor de vim, de clic en la letra i para ingresar al modo INSERT y pegue el código anteriormente copiado. Luego de clic a la tecla Esc y escriba el comando :wq para guardar el archivo y salir del editor. 
+4. Al abrir el editor de vim, de clic en la letra i para ingresar al modo INSERT y pegue el código anteriormente copiado. Luego de clic a la tecla Esc y escriba el comando :wq para guardar el archivo y salir del editor.
 
-5. Para compilar el archivo ejecute la siguiente instrucción:
+6. Para compilar el archivo ejecute la siguiente instrucción:
   ```
   gcc -Wall -fopenmp omp_sumaSerieFibonacci.c -o omp_sumaSerieFibonacci
   ```
