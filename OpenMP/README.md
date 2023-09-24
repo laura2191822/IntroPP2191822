@@ -44,6 +44,13 @@ Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguient
 Para medir el tiempo se utilizo una "n" pequeña (n = 8) y luego una más grande (n = 1000) para observar como cambia el tiempo de ejecucion a medida que "n" se hace mas grande. 
 
 #### Tiempos de ejecución para sumaSerieFibonacci1.c
+![img3](./Recursos/sumaSerieFibonacci1(tiempo).jpg)
+#### Tiempos de ejecución para sumaSerieFibonacci2.c
+![img4](./Recursos/sumaSerieFibonacci2(tiempo).jpg)
+#### Tiempos de ejecución para sumaSerieFibonacci3.c
+![img5](./Recursos/Comandos.jpg)
+#### Tiempos de ejecución para omp_sumaSerieFibonacci.c
+![img6](./Recursos/Comandos.jpg)
 
 # Pseudocódigos
 
