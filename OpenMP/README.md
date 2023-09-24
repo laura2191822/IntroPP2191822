@@ -37,7 +37,7 @@ Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguient
   ```
   ./omp_sumaSerieFibonacci
   ```
-![img1](./Recursos/Comandos.jpg)
+![img2](./Recursos/Comandos.jpg)
 
 # Comparaciones de tiempos de ejecución 
 
