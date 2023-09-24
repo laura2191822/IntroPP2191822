@@ -41,6 +41,10 @@ Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguient
 
 # Comparaciones de tiempos de ejecución 
 
+Para medir el tiempo se utilizo una "n" pequeña (n = 8) y luego una más grande (n = 1000) para observar como cambia el tiempo de ejecucion a medida que "n" se hace mas grande. 
+
+#### Tiempos de ejecución para sumaSerieFibonacci1.c
+
 # Pseudocódigos
 
 # Análisis de complejidad de los algoritmos
