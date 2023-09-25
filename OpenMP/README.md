@@ -165,6 +165,48 @@ Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grand
 
 # Análisis de complejidad de los algoritmos
 
+#### Análisis de complejidad de sumaSerieFibonacci1.c
+
+- El tiempo de ejecución de la función calculateEvenSum(n) está dominado por el bucle for que se ejecuta 2n veces. Dentro de este bucle, todas las operaciones (cálculo del número de Fibonacci, comprobación de si el índice es par y suma del número de Fibonacci a la suma total) se realizan en tiempo constante. Por lo tanto, la complejidad temporal de esta función es O(n).
+
+- En cuanto a la complejidad espacial, la función calculateEvenSum(n) crea un array fibo de tamaño 2n + 1 para almacenar los números de Fibonacci. Por lo tanto, la complejidad espacial es O(n).
+
+Por lo tanto, este código tiene una complejidad temporal y espacial lineal, es decir, O(n).
+
+#### Análisis de complejidad de sumaSerieFibonacci2.c
+
+- Este código utiliza una optimización conocida como “Fórmula de la serie de Fibonacci” o “Identidad de Cassini”, que permite calcular el n-ésimo número de Fibonacci en O(log n) en lugar de O(n).
+
+- La función fib(n) en este código no calcula todos los números de Fibonacci hasta n. En cambio, utiliza una fórmula para calcular directamente el n-ésimo número de Fibonacci, lo que reduce significativamente el tiempo de ejecución.
+
+Por lo tanto, la complejidad temporal de este código es O(log n).
+
+- En cuanto a la complejidad espacial, aunque se utiliza un array f[] de tamaño MAX para almacenar los números de Fibonacci calculados, en realidad solo se utilizan O(log n) entradas en este array debido a la naturaleza recursiva de la función fib(n). Por lo tanto, la complejidad espacial también es O(log n).
+
+#### Análisis de complejidad de sumaSerieFibonacci3.c
+
+- El tiempo de ejecución de la función fibo(n) está dominado por las llamadas recursivas a fibo(n - 1) y fibo(n - 2). Dado que no hay memoización (es decir, no se almacenan los resultados de los cálculos previos), cada número de Fibonacci se calcula múltiples veces. Por lo tanto, la complejidad temporal de esta función es O(2^n), que es exponencial.
+
+- En cuanto a la complejidad espacial, la función fibo(n) utiliza espacio en la pila para las llamadas recursivas. En el peor de los casos (cuando n es grande), esto puede llevar a una profundidad de recursión de n. Por lo tanto, la complejidad espacial es O(n).
+
+Por lo tanto, este código tiene una complejidad temporal exponencial y una complejidad espacial lineal.
+
+#### Análisis de complejidad de omp_sumaSerieFibonacci.c
+
+- El tiempo de ejecución de la función fibo(n) está dominado por las llamadas recursivas a fibo(n - 1) y fibo(n - 2). Dado que no hay memoización (es decir, no se almacenan los resultados de los cálculos previos), cada número de Fibonacci se calcula múltiples veces. Por lo tanto, la complejidad temporal de esta función es O(2^n), que es exponencial.
+
+- Sin embargo, en la función principal del programa, se utilizan dos secciones paralelas para calcular dos números de Fibonacci diferentes al mismo tiempo. Esto puede reducir potencialmente el tiempo de ejecución a la mitad en un sistema con al menos dos núcleos de CPU, pero no cambia la complejidad temporal exponencial.
+
+- En cuanto a la complejidad espacial, la función fibo(n) utiliza espacio en la pila para las llamadas recursivas. En el peor de los casos (cuando n es grande), esto puede llevar a una profundidad de recursión de n. Por lo tanto, la complejidad espacial es O(n).
+
+Por lo tanto, este código tiene una complejidad temporal exponencial y una complejidad espacial lineal.
+
+### Conclusiones 
+
+Por lo tanto, teóricamente el código mas rápido en ejecutarse serie "sumaSerieFibonacci2.c" y el mas lento "sumaSerieFibonacci3.c". "sumaSerieFibonacci1.c" seria el segundo más rápido y "omp_sumaSerieFibonacci.c" el tercero. 
+
+Si observamos los resultados que obtuvimos al medir los tiempos de ejecución podemos comprobar que estos cumplen con la teoría. A medida que "n" sea mas grande el programa "sumaSerieFibonacci2.c" es el que tiene mejor rendimiento y "sumaSerieFibonacci3.c" es el que tiene peor rendimiento. 
+
 # Comparación de métodos
 
 *....*
