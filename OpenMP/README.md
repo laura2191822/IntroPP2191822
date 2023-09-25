@@ -41,18 +41,37 @@ Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguient
 
 # Comparaciones de tiempos de ejecución 
 
-Para medir el tiempo se utilizo una "n" pequeña (n = 8) y luego una más grande (n = 1000) para observar como cambia el tiempo de ejecucion a medida que "n" se hace mas grande. 
+Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grande (n = 100) para observar como cambia el tiempo de ejecucion a medida que "n" se hace mas grande. 
 
 #### Tiempos de ejecución para sumaSerieFibonacci1.c
-![img3](./Recursos/sumaSerieFibonacci1(tiempo).jpg)
+
 #### Tiempos de ejecución para sumaSerieFibonacci2.c
-![img4](./Recursos/sumaSerieFibonacci2(tiempo).jpg)
+
 #### Tiempos de ejecución para sumaSerieFibonacci3.c
-![img5](./Recursos/Comandos.jpg)
+
 #### Tiempos de ejecución para omp_sumaSerieFibonacci.c
-![img6](./Recursos/Comandos.jpg)
 
 # Pseudocódigos
+
+#### Pseudocódigo de sumaSerieFibonacci1.c
+
+01. Inicializar n
+02. Solicitar al usuario que ingrese el valor de n
+03. Si n es menor o igual a cero, retornar 0
+04. Crear un array fibo con tamaño 2n + 1, inicializar fibo[0] en 0 y fibo[1] en 1
+05. Inicializar la suma en 0
+06. Para i desde 2 hasta 2n (inclusive), hacer lo siguiente:
+07. Calcular el i-ésimo número de Fibonacci como la suma de los dos números anteriores en la secuencia y almacenarlo en fibo[i]
+08. Si i es par, agregar fibo[i] a la suma total
+09. Retornar la suma total
+10. Imprimir "La suma de Fibonacci con índices pares hasta n términos es: " seguido del resultado de la función calculateEvenSum(n)
+11. Terminar el programa
+
+#### Pseudocódigo de sumaSerieFibonacci2.c
+
+#### Pseudocódigo de sumaSerieFibonacci3.c
+
+#### Pseudocódigo de omp_sumaSerieFibonacci.c
 
 # Análisis de complejidad de los algoritmos
 
