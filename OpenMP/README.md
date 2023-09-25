@@ -41,7 +41,7 @@ Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguient
 
 # Comparaciones de tiempos de ejecución 
 
-Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grande (n = 100) para observar como cambia el tiempo de ejecucion a medida que "n" se hace mas grande. 
+Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grande (n = 100 para "sumaSerieFibonacci1.c" y "sumaSerieFibonacci2.c, para "sumaSerieFibonacci3.c y "omp_sumaSerieFibonacci.c" se utilizo n = 22 ya que para n mas grandes los programas demoraban mucho en ejecutarse) para observar como cambia el tiempo de ejecucion a medida que "n" se hace mas grande. 
 
 #### Tiempos de ejecución para sumaSerieFibonacci1.c
 
@@ -201,7 +201,7 @@ Por lo tanto, este código tiene una complejidad temporal exponencial y una comp
 
 Por lo tanto, este código tiene una complejidad temporal exponencial y una complejidad espacial lineal.
 
-### Conclusiones 
+#### Conclusiones 
 
 Por lo tanto, teóricamente el código mas rápido en ejecutarse serie "sumaSerieFibonacci2.c" y el mas lento "sumaSerieFibonacci3.c". "sumaSerieFibonacci1.c" seria el segundo más rápido y "omp_sumaSerieFibonacci.c" el tercero. 
 
