@@ -209,4 +209,11 @@ Si observamos los resultados que obtuvimos al medir los tiempos de ejecución po
 
 # Comparación de métodos
 
-*....*
+1. **sumaSerieFibonacci1 (solución secuencial sin memoización)**: este método tiene una complejidad temporal lineal O(n) y una complejidad espacial lineal. No utiliza la memoización, por lo que puede ser más lento que otros métodos para valores grandes de n.
+
+2. **sumaSerieFibonacci2 (solución secuencial con memoización)**: este método tiene una complejidad temporal logarítmica O(log n) y una complejidad espacial logarítmica. Utiliza la técnica de memoización para almacenar los resultados de los cálculos previos, lo que reduce significativamente el tiempo de ejecución al evitar cálculos redundantes.
+
+3. **sumaSerieFibonacci3 (solución secuencial con recursión)**: este método tiene una complejidad temporal exponencial O(2^n) y una complejidad espacial lineal. No utiliza la memoización y realiza cálculos redundantes debido a las llamadas recursivas, por lo que es el más lento de los tres métodos.
+
+4. **omp_sumaSerieFibonacci (código con OpenMP)**: este código también tiene una complejidad temporal exponencial O(2^n) y una complejidad espacial lineal. El paralelismo puede acelerar significativamente el cálculo en sistemas con múltiples núcleos de CPU.
+Si bien es mejor que el método recursivo simple, pero aún puede ser exponencial en casos extremos.
