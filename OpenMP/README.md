@@ -53,7 +53,11 @@ Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grand
 
 #### Tiempos de ejecución para sumaSerieFibonacci3.c
 
+![img5](./Recursos/TsumaSerieFibonacci3.jpg)
+
 #### Tiempos de ejecución para omp_sumaSerieFibonacci.c
+
+![img6](./Recursos/Tomp_sumaSerieFibonacci.jpg)
 
 # Pseudocódigos
 
