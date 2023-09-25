@@ -45,7 +45,11 @@ Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grand
 
 #### Tiempos de ejecución para sumaSerieFibonacci1.c
 
+![img3](./Recursos/TsumaSerieFibonacci1.jpg)
+
 #### Tiempos de ejecución para sumaSerieFibonacci2.c
+
+![img4](./Recursos/TsumaSerieFibonacci2.jpg)
 
 #### Tiempos de ejecución para sumaSerieFibonacci3.c
 
@@ -55,23 +59,109 @@ Para medir el tiempo se utilizo una "n" pequeña (n = 10) y luego una más grand
 
 #### Pseudocódigo de sumaSerieFibonacci1.c
 
-01. Inicializar n
-02. Solicitar al usuario que ingrese el valor de n
-03. Si n es menor o igual a cero, retornar 0
-04. Crear un array fibo con tamaño 2n + 1, inicializar fibo[0] en 0 y fibo[1] en 1
-05. Inicializar la suma en 0
-06. Para i desde 2 hasta 2n (inclusive), hacer lo siguiente:
-07. Calcular el i-ésimo número de Fibonacci como la suma de los dos números anteriores en la secuencia y almacenarlo en fibo[i]
-08. Si i es par, agregar fibo[i] a la suma total
-09. Retornar la suma total
-10. Imprimir "La suma de Fibonacci con índices pares hasta n términos es: " seguido del resultado de la función calculateEvenSum(n)
-11. Terminar el programa
+1. Inicializar n.
+   
+2. Solicitar al usuario que ingrese el valor de n.
+   
+3. Si n es menor o igual a cero, retornar 0.
+   
+4. Crear un array fibo con tamaño 2n + 1, inicializar fibo[0] en 0 y fibo[1] en 1.
+   
+5. Inicializar la suma en 0.
+   
+6. Para i desde 2 hasta 2n (inclusive), hacer lo siguiente:
+   
+   6.1. Calcular el i-ésimo número de Fibonacci como la suma de los dos números anteriores en la secuencia y almacenarlo en fibo[i].
+   
+   6.2. Si i es par, agregar fibo[i] a la suma total.
+   
+7. Retornar la suma total.
+   
+8. Imprimir "La suma de Fibonacci con índices pares hasta n términos es: " seguido del resultado de la función calculateEvenSum(n).
+   
+9. Terminar el programa.
 
 #### Pseudocódigo de sumaSerieFibonacci2.c
 
+1. Inicializar un array f de tamaño MAX con todos los elementos en 0.
+   
+2. Definir la función fib(n) que retorna el n-ésimo número de Fibonacci usando la tabla f[].
+   
+    2.1. Si n es 0, retornar 0.
+     
+    2.2. Si n es 1 o 2, retornar 1 y almacenar este valor en f[n].
+    
+    2.3. Si f[n] ya ha sido calculado, retornar f[n].
+    
+    2.4. Calcular k como (n + 1) / 2 si n es impar, o n / 2 si n es par.
+    
+    2.5. Calcular f[n] usando la fórmula (fib(k) * fib(k) + fib(k - 1) * fib(k - 1)) si n es impar, o (2 * fib(k - 1) + fib(k)) * fib(k)    si n    es par. 
+    
+    2.6. Retornar f[n].
+  
+3. Definir la función calculateEvenSum(n) que retorna el valor de la suma de los números de Fibonacci con índices pares.
+
+    3.1. Retornar (fib(2 * n + 1) - 1).
+  
+4. En la función principal del programa:
+   
+    4.1. Solicitar al usuario que introduzca un número y almacenarlo en n.
+    
+    4.2. Calcular la suma de los números de Fibonacci con índices pares hasta el término n usando la función calculateEvenSum(n) y           almacenar el resultado en sum.
+    
+    4.3. Imprimir “La suma de los números de Fibonacci con índices pares hasta n términos es sum”.
+    
+    4.4 Terminar el programa.
+
 #### Pseudocódigo de sumaSerieFibonacci3.c
 
+1. Definir la función fibo(n) que retorna el n-ésimo número de Fibonacci.
+   
+    1.1. Si n es 1 o 2, retornar 1.
+   
+    1.2. Si n es mayor que 2, retornar la suma de los dos números anteriores en la secuencia de Fibonacci, que se calculan llamando a la     función fibo(n - 1) y fibo(n - 2).
+   
+2. Definir la función calculateEvenSum(n) que retorna el valor de la suma de los números de Fibonacci con índices pares.
+   
+    2.1. Retornar (fibo(2 * n + 1) - 1).
+   
+3. En la función principal del programa:
+   
+    3.1. Solicitar al usuario que introduzca un número y almacenarlo en n.
+   
+    3.2. Calcular la suma de los números de Fibonacci con índices pares hasta el término n usando la función calculateEvenSum(n) y           almacenar el resultado en sum.
+   
+    3.3. Imprimir “La suma de los números de Fibonacci con índices pares hasta n términos es sum”.
+   
+    3.4. Terminar el programa.
+
 #### Pseudocódigo de omp_sumaSerieFibonacci.c
+
+1. Definir la función fibo(n) que retorna el n-ésimo número de Fibonacci.
+   
+    1.1. Si n es 1 o 2, retornar 1.
+   
+    1.2. Si n es mayor que 2, retornar la suma de los dos números anteriores en la secuencia de Fibonacci, que se calculan llamando a la          función fibo(n - 1) y fibo(n - 2).
+   
+2. En la función principal del programa:
+   
+    2.1. Establecer el número de hilos a 5.
+   
+    2.2. Solicitar al usuario que introduzca un número y almacenarlo en n.
+   
+    2.3. Inicializar la variable respuesta en 0.
+   
+    2.4. Crear dos secciones paralelas:
+   
+       2.4.1. Sección 1: Calcular el (2n + 1 - 2)-ésimo número de Fibonacci usando la función fibo(), imprimir el resultado y agregarlo a respuesta.
+   
+       2.4.2. Sección 2: Calcular el (2n + 1 - 1)-ésimo número de Fibonacci usando la función fibo(), imprimir el resultado y agregarlo a respuesta.
+   
+    2.5. Restar 1 a respuesta.
+   
+    2.6. Imprimir “La suma de los números de Fibonacci con índices pares hasta n términos es respuesta”.
+   
+    2.7. Terminar el programa.
 
 # Análisis de complejidad de los algoritmos
 
