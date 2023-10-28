@@ -13,15 +13,24 @@ Este repositorio corresponde a una versión mejorada de una solución propuesta 
 
 # Modificaciones realizadas
 #### En el código (main.c)
+
 Se crearon las variables rank y size para guardar a parallelization.rank y parallelization.size respectivamente. 
+
 ![img1](./Recursos/modificacionMain1.jpg)
+
 Se crearon las variables local_nsteps y extra_nsteps para determinar cuántos pasos de ejecución o iteraciones de un bucle se asignarán a cada uno de los procesos o hilos.
+
 ![img2](./Recursos/modificacionMain2.jpg)
+
 El bucle de tiempo se divide entre los procesos MPI de manera equitativa, y se utiliza una variable local_nsteps para controlar la cantidad de pasos de tiempo que cada proceso realiza. Los pasos de tiempo adicionales se distribuyen a los procesos según sea necesario. Esto asegura que todos los procesos estén ocupados y trabajen de manera eficiente.
+
 ![img3](./Recursos/modificacionMain3.jpg)
+
 Se utiliza la variable rank en vez de parallelization.rank.
+
 ![img4](./Recursos/modificacionMain4.jpg)
-En la ejecución y en la compilación
+
+#### En la ejecución y en la compilación del programa
 # Instrucciones de compilación y ejecución 
 Modo interactivo
 Modo pasivo
