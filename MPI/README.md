@@ -88,7 +88,6 @@ El número al lado de -np es el número de procesos, para este ejemplo se utiliz
 
 #### Modo pasivo
 En el editor de texto de su preferencia cree el siguiente script: 
-
      ```
       #!/bin/bash
       #SBATCH --job-name=heat-equation-MPI
@@ -108,9 +107,7 @@ En el editor de texto de su preferencia cree el siguiente script:
       # Comandos de trabajo
       mpirun -np ./heat_mpi
      ```
-     
    Guarde y salga del editor y luego ejecute el siguiente comando: 
-   
      ```
      sbatch script-heat-equation.sh
      ```
