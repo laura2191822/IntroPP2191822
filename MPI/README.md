@@ -11,8 +11,12 @@ Este repositorio corresponde a una versión mejorada de una solución propuesta 
 - **Makefile**: se utiliza para compilar y vincular el programa "heat_mpi" a partir de varios archivos fuente, incluidos "core.c", "setup.c", "utilities.c", "io.c" y "main.c", que forman parte de la solución para la ecuación de calor. El programa se compila con optimización y se vincula con las bibliotecas necesarias, como "libpng" y "libm".
 - **bottle.dat**: ilustra lo que le sucede a una botella de refresco fría que se somete a temperaturas externas. 
 
-# Modificación realizadas
+# Modificaciones realizadas
 En el código 
+![img1](./Recursos/modificacionMain1.jpg)
+![img2](./Recursos/modificacionMain2.jpg)
+![img3](./Recursos/modificacionMain3.jpg)
+![img4](./Recursos/modificacionMain4.jpg)
 En la ejecución y en la compilación
 # Instrucciones de compilación y ejecución 
 Modo interactivo
