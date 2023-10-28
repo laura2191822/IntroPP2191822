@@ -131,15 +131,15 @@ En el editor de texto de su preferencia cree el siguiente script:
 #### Código modificado con cambios en la compilación 
 - Con -O1:
   
-  ![img9](./Recursos/Optimizado2.jpg)
+  ![img9](./Recursos/O1.jpg)
   
 - Con -O2:
   
-  ![img10](./Recursos/Optimizado2.jpg)
+  ![img10](./Recursos/O2.jpg)
   
 - Con -Ofast:
 
-  ![img11](./Recursos/Optimizado2.jpg)
+  ![img11](./Recursos/Ofast.jpg)
   
 # Conclusiones
 
