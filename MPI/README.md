@@ -31,6 +31,9 @@ Se utiliza la variable rank en vez de parallelization.rank.
 ![img4](./Recursos/modificacionMain4.jpg)
 
 #### En la ejecución y en la compilación del programa
+
+Se cambiaron las opciones de optimizaciones en el make por -O1, -O2 y -Ofast pero no hubieron mejoras, por lo tanto en el Makefile cargado en el repositorio se dejo la opción -O3 (la que tenia el código original). De igual forma los resultados se encuentran en la sección "Resultados obtenidos". 
+
 # Instrucciones de compilación y ejecución 
 #### Modo interactivo
 Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguientes instrucciones:
@@ -125,7 +128,20 @@ En el editor de texto de su preferencia cree el siguiente script:
 
 ![img8](./Recursos/Optimizado2.jpg)
 
-#### Código modificado con mejoras en la ejecución y compilación 
+#### Código modificado con cambios en la compilación 
+- Con -O1:
+  
+  ![img9](./Recursos/Optimizado2.jpg)
+  
+- Con -O2:
+  
+  ![img10](./Recursos/Optimizado2.jpg)
+  
+- Con -Ofast:
 
+  ![img11](./Recursos/Optimizado2.jpg)
+  
 # Conclusiones
+
+Como se pudo observar en la sección "Resultados obtenidos" la módificación en el código main.c si mejora significativamente los tiempos de ejecución del programa. 
 
