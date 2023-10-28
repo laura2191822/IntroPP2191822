@@ -1,3 +1,24 @@
+/*
+
+  Purpose:
+
+    This program exemplifies parallelized heat diffusion simulation using the MPI (Message Passing Interface) library.
+
+  Licensing:
+
+    This code is distributed under the GNU LGPL license.
+
+  Modified:
+
+    27 October 2023
+
+  Author:
+  PRACE 
+  MPI Modification:
+  27 October 2023 by Laura Andrea Rodríguez Mejía, Universidad Industrial de Santander laura2191822@correo.uis.edu.co                
+  The original code has been parallelized to distribute the workload efficiently across multiple MPI processes.
+*/
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
