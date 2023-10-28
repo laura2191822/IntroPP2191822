@@ -95,22 +95,24 @@ En el editor de texto de su preferencia cree el siguiente script:
       #SBATCH --ntasks=4
       #SBATCH --cpus-per-task=1
       #SBATCH --output=heat-equation-MPI.txt
-
+      
       # Carga de módulo para trabajar
       module load devtools/mpi/openmpi/3.1.4
-
+      
       # Ruta al ejecutable
       EXECUTABLE=./heat_mpi
       INPUT_FILE=botella.dat
       NUM_STEPS=1000
-
+      
       # Comandos de trabajo
       mpirun -np ./heat_mpi
+      
       ~~~
    Guarde y salga del editor y luego ejecute el siguiente comando: 
    
-      ~~~
+     ~~~
      sbatch script-heat-equation.sh
+     
       ~~~
 # Resultados obtenidos 
 Código original 
