@@ -22,7 +22,7 @@ Se crearon las variables local_nsteps y extra_nsteps para determinar cuántos pa
 
 ![img2](./Recursos/modificacionMain2.jpg)
 
-El bucle de tiempo se divide entre los procesos MPI de manera equitativa, y se utiliza una variable local_nsteps para controlar la cantidad de pasos de tiempo que cada proceso realiza. Los pasos de tiempo adicionales se distribuyen a los procesos según sea necesario. Esto asegura que todos los procesos estén ocupados y trabajen de manera eficiente.
+El bucle de tiempo se divide entre los procesos MPI de manera equitativa, y se utiliza la variable local_nsteps para controlar la cantidad de pasos de tiempo que cada proceso realice. Los pasos de tiempo adicionales se distribuyen a los procesos según sea necesario. Esto asegura que todos los procesos estén ocupados y trabajen de manera eficiente.
 
 ![img3](./Recursos/modificacionMain3.jpg)
 
