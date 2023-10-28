@@ -32,7 +32,11 @@ Se utiliza la variable rank en vez de parallelization.rank.
 
 #### En la ejecución y en la compilación del programa
 # Instrucciones de compilación y ejecución 
-Modo interactivo
+#### Modo interactivo
+Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguientes instrucciones:
+1. Entre en GUANE-1 con sus respectivas credenciales y ejecute el siguiente comando:
+2. 
+
 Modo pasivo
 # Resultados obtenidos 
 Código original 
