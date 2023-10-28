@@ -88,8 +88,7 @@ El número al lado de -np es el número de procesos, para este ejemplo se utiliz
 
 #### Modo pasivo
 En el editor de texto de su preferencia cree el siguiente script: 
-     
-       ~~~
+      ~~~
       #!/bin/bash
       #SBATCH --job-name=heat-equation-MPI
       #SBATCH --nodes=4
@@ -112,7 +111,7 @@ En el editor de texto de su preferencia cree el siguiente script:
    
       ~~~
      sbatch script-heat-equation.sh
-     ~~~
+      ~~~
 # Resultados obtenidos 
 Código original 
 Código modificado 
