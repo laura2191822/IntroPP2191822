@@ -1,4 +1,4 @@
-# Descripción del programa 
+![image](https://github.com/laura2191822/IntroPP2191822/assets/109431146/67f3b4f0-5f53-43ae-bb1d-c4634ee7d931)# Descripción del programa 
 Este repositorio corresponde a una versión mejorada de una solución propuesta para un curso de MPI realizado por PRACE para la ecuación de calor bidimensional, dicha solución esta realizada en MPI con C. A continuación se dara una descripción de cada uno de los archivos que hace parte de esta solución: 
 - **core.c**: contiene funciones esenciales para resolver la ecuación de calor en un entorno de procesamiento paralelo utilizando MPI. Las funciones se encargan de intercambiar valores en los bordes del dominio y actualizar los valores de temperatura en el interior y en los bordes del dominio en cada paso de tiempo.
 - **heat.h**: proporciona las definiciones y prototipos necesarios para la implementación del programa de simulación de la ecuación de calor. Define las estructuras de datos y funciones que se utilizan en el programa principal para llevar a cabo la simulación de difusión de calor en un dominio de dos dimensiones.
@@ -131,6 +131,13 @@ Para obtener estos resultados se usaron los siguientes comandos:
   ![img6](./Recursos/Original2.jpg)
 
 #### Código modificado 
+- Para el primer comando:
+  
+  ![img7](./Recursos/Original1.jpg)
+  
+- Para el segundo comando:
+  
+  ![img8](./Recursos/Original2.jpg)
 #### Código modificado con mejoras en la ejecución y compilación 
 # Conclusiones
 
