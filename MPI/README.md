@@ -143,5 +143,5 @@ En el editor de texto de su preferencia cree el siguiente script:
   
 # Conclusiones
 
-Como se pudo observar en la sección "Resultados obtenidos" la módificación en el código main.c si mejora significativamente los tiempos de ejecución del programa. 
+Como se pudo observar en la sección "Resultados obtenidos" la modificación en el código main.c si mejora significativamente los tiempos de ejecución del programa. 
 
