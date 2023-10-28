@@ -34,8 +34,25 @@ Se utiliza la variable rank en vez de parallelization.rank.
 # Instrucciones de compilación y ejecución 
 #### Modo interactivo
 Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguientes instrucciones:
-1. Entre en GUANE-1 con sus respectivas credenciales y ejecute el siguiente comando:
-2. 
+1. Descargue el archivo en formato zip.
+   
+2. Entre en GUANE-1 con sus respectivas credenciales y ejecute los siguientes comandos:
+  ```
+  ssh guane
+  ```
+  ```
+  srun -n 4 -w guane10 --pty /bin/bash
+  ```
+5. Cargue el archivo descarga en su espacio.
+6. Descomprima el archivo utilizando el siguiente comando:
+7. Ingrese en la carpeta donde se encuentra el programa, usando los siguientes comandos:
+8. Utilice el archivo make para hacer la compilación del programa de la siguiente forma:
+9. Utilice los siguientes comandos para relizar la ejecución del programa:
+   - Ejecutando con los valores predeterminados: mpirun -np 4 ./heat_mpi
+   - Campo inicial desde un archivo: mpirun -np 4 ./heat_mpi bottle.dat
+   - Campo inicial desde un archivo, con un número dado de pasos de tiempo: mpirun -np 4 ./heat_mpi bottle.dat 1000
+   - Patrón predeterminado con dimensiones y pasos de tiempo especificados: mpirun -np 4 ./heat_mpi 800 800 1000
+ En  número al lado de -np es el número de procesos, para este ejemplo se utilizaron 4, pero se puede cambiar. Al igual que se pueden cambiar los valores de las dimensiones y el número de pasos. 
 
 Modo pasivo
 # Resultados obtenidos 
