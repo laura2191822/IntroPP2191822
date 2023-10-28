@@ -124,11 +124,11 @@ Para obtener estos resultados se usaron los siguientes comandos:
 #### Código original 
 - Para el primer comando:
   
-  ![img5](./Recursos/modificacionMain4.jpg)
+  ![img5](./Recursos/Original1.jpg)
   
 - Para el segundo comando:
   
-  ![img6](./Recursos/modificacionMain4.jpg)
+  ![img6](./Recursos/Original2.jpg)
 
 #### Código modificado 
 #### Código modificado con mejoras en la ejecución y compilación 
