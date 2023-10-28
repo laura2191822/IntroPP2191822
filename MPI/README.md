@@ -112,8 +112,25 @@ En el editor de texto de su preferencia cree el siguiente script:
      sbatch script-heat-equation.sh
 
 # Resultados obtenidos 
-Código original 
-Código modificado 
-Código modificado con mejoras en la ejecución y compilación 
+Para obtener estos resultados se usaron los siguientes comandos: 
+1. 
+     ```
+     mpirun -np 4 ./heat_mpi bottle.dat 2000
+     ```
+2. 
+     ```
+     mpirun -np 4 ./heat_mpi 600 800 2000
+     ```
+#### Código original 
+- Para el primer comando:
+  
+  ![img5](./Recursos/modificacionMain4.jpg)
+  
+- Para el segundo comando:
+  
+  ![img6](./Recursos/modificacionMain4.jpg)
+
+#### Código modificado 
+#### Código modificado con mejoras en la ejecución y compilación 
 # Conclusiones
 
