@@ -1,3 +1,8 @@
+# Integrantes 
+
+Kevin Sebastián Anaya Herrera - 2191964
+Laura Andrea Rodríguez Mejía - 2191822   
+
 # Descripción de problema 
 #### Clasificación paralela
 Implementar un algoritmo de clasificación paralela que pueda ordenar de manera eficiente grandes conjuntos de datos mediante el uso de múltiples procesadores o subprocesos. 
@@ -38,10 +43,11 @@ Este código en C implementa la construcción de un árbol de búsqueda binaria 
   
 #### Código paralelo (con OpenMP)
 
-Para hacer la versión paralela del código secuencial, se utilizo OpenMP, y se realizaron los siguientes cambios: 
-Función de Inserción en Lote (insertBatch):
+El código organiza el árbol paralelamente mediante la construcción de subárboles en paralelo utilizando OpenMP. La función insertBatch es clave para este proceso. Esta función divide el conjunto total de datos en lotes y asigna cada lote a un hilo diferente. Cada hilo construye su propio subárbol mediante la función insert, y luego los subárboles se combinan para formar el árbol final. #pragma omp parallel se utiliza para crear un equipo de hilos que trabajará en la construcción del árbol en paralelo. Y #pragma omp single se utiliza para asegurarse de que la construcción del árbol se realice solo por un hilo.
 
-Introduce una nueva función insertBatch que recibe un rango de elementos y realiza la inserción de estos elementos en el árbol de manera secuencial. Esta función es utilizada para construir el árbol de forma paralela.
+
+
+
 # Instrucciones de compilación y ejecución 
 #### Modo interactivo
 #### Modo pasivo
