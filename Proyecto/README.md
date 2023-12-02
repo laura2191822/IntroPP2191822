@@ -4,7 +4,7 @@ Implementar un algoritmo de clasificación paralela que pueda ordenar de manera 
 # Descripción del programa 
 #### Árbol de búsqueda binaria (BST en inglés por Binary Search Tree) 
 Es una estructura de datos de árbol especializada que organiza sus nodos de manera jerárquica. La propiedad fundamental de un BST es que, para cada nodo, todos los nodos en su subárbol izquierdo tienen valores menores que el nodo actual, y todos los nodos en su subárbol derecho tienen valores mayores que el nodo actual. Esta propiedad facilita la búsqueda eficiente de elementos dentro del árbol.
-![img1](./Recursos/BST.jpg)
+![img1](./Recursos/BST.png)
 #### Código secuencial
 #### Código paralelo (con OpenMP)
 # Instrucciones de compilación y ejecución 
