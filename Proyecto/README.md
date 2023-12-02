@@ -37,6 +37,11 @@ Este código en C implementa la construcción de un árbol de búsqueda binaria 
 
   
 #### Código paralelo (con OpenMP)
+
+Para hacer la versión paralela del código secuencial, se utilizo OpenMP, y se realizaron los siguientes cambios: 
+Función de Inserción en Lote (insertBatch):
+
+Introduce una nueva función insertBatch que recibe un rango de elementos y realiza la inserción de estos elementos en el árbol de manera secuencial. Esta función es utilizada para construir el árbol de forma paralela.
 # Instrucciones de compilación y ejecución 
 #### Modo interactivo
 #### Modo pasivo
