@@ -1,7 +1,8 @@
 # Integrantes 
 
-Kevin Sebastián Anaya Herrera - 2191964
-Laura Andrea Rodríguez Mejía - 2191822   
+- Kevin Sebastián Anaya Herrera - 2191964
+  
+- Laura Andrea Rodríguez Mejía - 2191822   
 
 # Descripción de problema 
 #### Clasificación paralela
