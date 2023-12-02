@@ -41,19 +41,21 @@ Este código en C implementa la construcción de un árbol de búsqueda binaria 
   - Almacena los resultados (recorrido inorden) en un nuevo archivo de texto llamado "salidasecuencial.txt".
   - Libera la memoria del arreglo data.
  
-  ![img5](./Recursos/CodigoS3.jpg)
+![img5](./Recursos/CodigoS3.jpg)
 
   
 #### Código paralelo (con OpenMP)
 
-El código organiza el árbol paralelamente mediante la construcción de subárboles en paralelo utilizando OpenMP. La función insertBatch es clave para este proceso. Esta función divide el conjunto total de datos en lotes y asigna cada lote a un hilo diferente. Cada hilo construye su propio subárbol mediante la función insert, y luego los subárboles se combinan para formar el árbol final. #pragma omp parallel se utiliza para crear un equipo de hilos que trabajará en la construcción del árbol en paralelo. Y #pragma omp single se utiliza para asegurarse de que la construcción del árbol se realice solo por un hilo.
+En está nueva versión el código organiza el árbol paralelamente mediante la construcción de subárboles en paralelo utilizando OpenMP. La función insertBatch es clave para este proceso. 
 
+![img5](./Recursos/CodigoS3.jpg)
 
+Esta función divide el conjunto total de datos en lotes y asigna cada lote a un hilo diferente. Cada hilo construye su propio subárbol mediante la función insert, y luego los subárboles se combinan para formar el árbol final. #pragma omp parallel se utiliza para crear un equipo de hilos que trabajará en la construcción del árbol en paralelo. Y #pragma omp single se utiliza para asegurarse de que la construcción del árbol se realice solo por un hilo.
 
+![img5](./Recursos/CodigoS3.jpg)
 
 # Instrucciones de compilación y ejecución 
-#### Modo interactivo
-#### Modo pasivo
+
 # Resultados obtenidos 
 # Análisis de resultados 
 # Conclusiones 
