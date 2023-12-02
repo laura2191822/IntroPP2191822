@@ -56,6 +56,50 @@ Esta función divide el conjunto total de datos en lotes y asigna cada lote a un
 
 # Instrucciones de compilación y ejecución 
 
+Para compilar y ejecutar el código en el clúster de GUANE-1, siga las siguientes instrucciones:
+
+1. Entre en GUANE-1 con sus respectivas credenciales y ejecute los siguientes comandos:
+  ```
+  ssh guane
+  ```
+  ```
+  srun -n 8 --pty /bin/bash
+  ```
+
+2. Cargue los archivos "numeros.c", "BSTSecuencial.c" y "BSTParalelo.c".
+
+3. Compile y ejecute el programa "numeros.c" utilizando los siguientes comandos:
+
+  ```
+  gcc numeros.c -std=c99 -o numeros
+  ```
+  ```
+  ./numeros
+  ```
+Luego de compilar y ejecutar este codigo se deberia generar un archivo llamado "numeros_aleatorios.txt" que sera utilizado por los códigos "BSTSecuencial" y "BSTParalelo" para posteriormente ordenarlos. 
+
+El código "numeros.c" puede ser modificado para aumentar o disminuir los números generados. 
+
+4. Para compilar y ejecutar el programa "BSTSecuencial" utiliza los siguientes comandos:
+
+  ```
+  gcc BSTSecuencial.c -std=c99 -o BSTSecuencial
+  ```
+  ```
+  ./BSTSecuencial
+  ```
+Al final este generara un archivo llamado "salidaSecuencial.txt" en donde apareceran los números ordenados. 
+
+5. Para compilar y ejecutar el programa "BSTParalelo" utiliza los siguientes comandos:
+
+  ```
+  gcc -fopenmp BSTParalelo.c -std=c99 -o BSTParalelo
+  ```
+  ```
+  ./BSTParalelo
+  ```
+Al final este generara un archivo llamado "salidaParalelo.txt" en donde apareceran los números ordenados. 
+
 # Resultados obtenidos 
 # Análisis de resultados 
 # Conclusiones 
