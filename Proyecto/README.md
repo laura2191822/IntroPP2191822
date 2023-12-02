@@ -2,7 +2,9 @@
 
 - Kevin Sebastián Anaya Herrera - 2191964
   
-- Laura Andrea Rodríguez Mejía - 2191822   
+- Laura Andrea Rodríguez Mejía - 2191822
+
+- Gabriela
 
 # Descripción de problema 
 #### Clasificación paralela
