@@ -166,7 +166,7 @@ Al final este generara un archivo llamado "salidaParalelo.txt" en donde aparecer
 
  A continuación se presenta una tabla junto con su gráfica en donde estan comparados los resultados obtenidos: 
  
- ![img20](./Recursos/tabla.png)
+ ![img20](./Recursos/tabla.jpg)
  
  ![img21](./Recursos/descarga.png)
 
