@@ -14,15 +14,15 @@ Este código en C implementa la construcción de un árbol de búsqueda binaria 
 
 - Estructura del nodo (struct Node): define una estructura Node que representa un nodo en el árbol de búsqueda binaria. Cada nodo tiene un dato entero (data) y dos punteros a nodos hijos izquierdo y derecho (left y right).
 
-![img1](./Recursos/BST.png)
+![img2](./Recursos/CodigoS0.jpg)
 
 - Función de inserción (insert): la función insert recibe un árbol (root) y un dato entero (data) a insertar en el árbol. Si el árbol está vacío, crea un nuevo nodo con el dato y lo devuelve como la nueva raíz del árbol. Si el dato es menor que el valor en el nodo actual, se llama recursivamente a insert en el subárbol izquierdo. Si es mayor, se llama recursivamente en el subárbol derecho. Luego devuelve la raíz del árbol actualizado después de la inserción.
 
-![img1](./Recursos/BST.png)
+![img3](./Recursos/CodigoS1.jpg)
 
 - Recorrido inorden (inOrder): la función inOrder realiza un recorrido inorden del árbol, escribiendo los datos en un archivo de salida. Primero el subárbol izquierdo, luego el nodo actual y finalmente el subárbol derecho.
 
-![img1](./Recursos/BST.png)
+![img4](./Recursos/CodigoS2.jpg)
   
 - Función principal (main): esta función hace lo siguiente 
   - Declara e inicializa la raíz del árbol como NULL.
@@ -33,7 +33,7 @@ Este código en C implementa la construcción de un árbol de búsqueda binaria 
   - Almacena los resultados (recorrido inorden) en un nuevo archivo de texto llamado "salidasecuencial.txt".
   - Libera la memoria del arreglo data.
  
-  ![img1](./Recursos/BST.png)
+  ![img5](./Recursos/CodigoS3.jpg)
 
   
 #### Código paralelo (con OpenMP)
