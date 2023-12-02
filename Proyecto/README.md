@@ -48,11 +48,11 @@ Este código en C implementa la construcción de un árbol de búsqueda binaria 
 
 En está nueva versión el código organiza el árbol paralelamente mediante la construcción de subárboles en paralelo utilizando OpenMP. La función insertBatch es clave para este proceso. 
 
-![img5](./Recursos/CodigoP0.jpg)
+![img6](./Recursos/CodigoP0.jpg)
 
 Esta función divide el conjunto total de datos en lotes y asigna cada lote a un hilo diferente. Cada hilo construye su propio subárbol mediante la función insert, y luego los subárboles se combinan para formar el árbol final. #pragma omp parallel se utiliza para crear un equipo de hilos que trabajará en la construcción del árbol en paralelo. Y #pragma omp single se utiliza para asegurarse de que la construcción del árbol se realice solo por un hilo.
 
-![img5](./Recursos/CodigoP1.jpg)
+![img7](./Recursos/CodigoP1.jpg)
 
 # Instrucciones de compilación y ejecución 
 
@@ -106,31 +106,51 @@ Al final este generara un archivo llamado "salidaParalelo.txt" en donde aparecer
 
 - Secuencial:
 
-- Paralelo: 
+![img8](./Recursos/PruebaS0.jpg)
+
+- Paralelo:
+
+![img9](./Recursos/PruebaP0.jpg)
 
 #### Con 100.000 números
 
 - Secuencial:
 
-- Paralelo: 
+![img10](./Recursos/PruebaS1.jpg)
+
+- Paralelo:
+
+![img11](./Recursos/PruebaP1.jpg)
 
 #### Con 1.000.0000 números 
 
 - Secuencial:
 
-- Paralelo: 
+![img12](./Recursos/PruebaS2.jpg)
+
+- Paralelo:
+
+![img13](./Recursos/PruebaP2.jpg)
 
 #### Con 10.000.000 números 
 
 - Secuencial:
 
-- Paralelo: 
+![img14](./Recursos/PruebaS3.jpg)
 
-#### Con 50.000.000 números 
+- Paralelo:
+
+![img15](./Recursos/PruebaP3.jpg)
+
+#### Con 20.000.000 números 
 
 - Secuencial:
 
-- Paralelo: 
+![img16](./Recursos/PruebaS4.jpg)
+
+- Paralelo:
+
+![img17](./Recursos/PruebaP4.jpg)
 
 # Análisis de resultados 
 # Conclusiones 
