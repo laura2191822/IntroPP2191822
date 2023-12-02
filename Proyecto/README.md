@@ -152,5 +152,15 @@ Al final este generara un archivo llamado "salidaParalelo.txt" en donde aparecer
 
 ![img17](./Recursos/PruebaP4.jpg)
 
+#### Con 100.000.000 números 
+
+- Secuencial:
+
+![img18](./Recursos/PruebaS5.jpg)
+
+- Paralelo:
+
+![img19](./Recursos/PruebaP5.jpg)
+
 # Análisis de resultados 
 # Conclusiones 
