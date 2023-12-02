@@ -163,4 +163,17 @@ Al final este generara un archivo llamado "salidaParalelo.txt" en donde aparecer
 ![img19](./Recursos/PruebaP5.jpg)
 
 # Análisis de resultados 
+
+ A continuación se presenta una tabla junto con su gráfica en donde estan comparados los resultados obtenidos: 
+ 
+ ![img20](./Recursos/PruebaP5.jpg)
+ 
+ ![img21](./Recursos/PruebaP5.jpg)
+
+ - Para pequeñas cargas de datos (10.000 y 100.000): para conjuntos de datos pequeños, el paralelismo no parece ofrecer una mejora significativa en el rendimiento. Los tiempos paralelos son ligeramente mayores que los tiempos secuenciales, indicando que la paralelización puede no ser beneficiosa para problemas pequeños.
+
+ - Cargas de datos moderadas (1.000.000 y 10.000.000): en estos casos, los tiempos paralelos comienzan a acercarse más a los tiempos secuenciales, siendo con 10.000.000 de datos menor la ejecución en el paralelo que en el secuencial. Igual podemos observar que la sobrecarga de paralelización puede afectar la eficiencia, y el beneficio real de la paralelización puede no ser evidente hasta que el tamaño del problema sea lo suficientemente grande.
+
+ - Cargas de datos grandes (20.000.000 y 100.000.000):a medida que el tamaño del problema aumenta, los tiempos paralelos comienzan a presentar mejorias respecto a los secuenciales. Esto sugiere que, para conjuntos de datos más grandes, el paralelismo podría estar proporcionando cierto grado de mejora en el rendimiento.
+
 # Conclusiones 
