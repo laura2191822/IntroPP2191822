@@ -122,7 +122,7 @@ Al final este generara un archivo llamado "salidaParalelo.txt" en donde aparecer
 
 ![img11](./Recursos/PruebaP1.jpg)
 
-#### Con 1.000.0000 números 
+#### Con 1.000.000 números 
 
 - Secuencial:
 
