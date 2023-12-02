@@ -101,5 +101,36 @@ Al final este generara un archivo llamado "salidaSecuencial.txt" en donde aparec
 Al final este generara un archivo llamado "salidaParalelo.txt" en donde apareceran los números ordenados. 
 
 # Resultados obtenidos 
+
+#### Con 10.000 números
+
+- Secuencial:
+
+- Paralelo: 
+
+#### Con 100.000 números
+
+- Secuencial:
+
+- Paralelo: 
+
+#### Con 1.000.0000 números 
+
+- Secuencial:
+
+- Paralelo: 
+
+#### Con 10.000.000 números 
+
+- Secuencial:
+
+- Paralelo: 
+
+#### Con 50.000.000 números 
+
+- Secuencial:
+
+- Paralelo: 
+
 # Análisis de resultados 
 # Conclusiones 
