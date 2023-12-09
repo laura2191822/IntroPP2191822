@@ -1,10 +1,16 @@
+# Link de la presentación 
+
+https://docs.google.com/presentation/d/1pp2uKTJA6srOLO3QTZfBwn9WbLAri7LQ_TaF_kh89gA/edit?usp=sharing 
+
+# Link del video en Youtube
+
+https://www.youtube.com/watch?v=Q_7Wj3DoXB4
+
 # Integrantes 
 
 - Kevin Sebastián Anaya Herrera - 2191964
   
 - Laura Andrea Rodríguez Mejía - 2191822
-
-- Gabriela
 
 # Descripción de problema 
 #### Clasificación paralela
